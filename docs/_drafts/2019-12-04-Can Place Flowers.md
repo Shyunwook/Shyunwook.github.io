@@ -3,7 +3,7 @@ title: "Can Place Flowers"
 categories:
   - LeetCode
 tags:
-  - leetcode
+  - LeetCode
 ---
 
 # javascript
