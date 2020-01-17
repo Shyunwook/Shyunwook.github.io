@@ -183,8 +183,16 @@ for (let key in obj) {
 
 정리해 보자면,
 
-- forEach : 배열에 사용 가능, 콜백에서 각 요소의 값과 인덱스를 매개변수로 받을 수 있음
-- for-of : 반복 가능한 객체에 사용 가능(iteration protocol을 준수하는 객체), 일반 객체 사용X, 각 요소의 값에 접근, `continue`, `break`, `return`을 사용할 수 있음
-- for-in : 배열, 객체에 사용 가능, 상속 받은 값에도 접근, `hasOwnProperty`로 속성 검사 필요!
+- forEach
+  - 배열에 사용 가능
+  - 콜백에서 각 요소의 값과 인덱스를 매개변수로 받을 수 있음
+- for-of
+  - 반복 가능한 객체에 사용 가능(iteration protocol을 준수하는 객체)
+  - 일반 객체 사용X, 각 요소의 값에 접근
+  - `continue`, `break`, `return`을 사용할 수 있음
+- for-in
+  - 배열, 객체에 사용 가능
+  - 상속 받은 값에도 접근 => `hasOwnProperty`로 속성 검사 필요!
+  - `continue`, `break`, `return`을 사용할 수 있음
 
 글 작성을 위해 혼자 이런 저런 자료를 찾아보면서, 정말 자주 쓰는 표현이었는데도 모르는 것들이 많았다는 것을 다시한번 깨달았습니다😫 역시 아직 갈길이 멀군요!! 부지런히 가보겠습니다.👏🏻👏🏻👏🏻
