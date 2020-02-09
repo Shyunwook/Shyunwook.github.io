@@ -266,3 +266,7 @@ document.querySelector("input[type=checkbox]").addEventListener("click", functio
 오늘 다룬 내용들은 실제 개발 도중 마주치는 여러 상황들에서 유용하게 사용되는 개념인 만큼 꼭 이해하고 넘어가시면 좋을 것 같습니다.
 
 이상한 점이나 궁굼한 점이 있다면 언제든 댓글 남겨주세요~!👍🏻
+
+## 참고
+
+![test](https://naver.com)
