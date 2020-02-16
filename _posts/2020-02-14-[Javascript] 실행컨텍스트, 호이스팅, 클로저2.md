@@ -482,3 +482,13 @@ function object : {
 기회가 되면 최신 스펙인 ES6에서의 실행 컨텍스트도 정리해서 올려보고 싶은 욕심이 생겼습니다🤪
 
 여기까지 잘 읽어주신 누군가에게 박수를!!👏🏻
+
+## 참고
+
+- [https://poiemaweb.com/js-closure](https://poiemaweb.com/js-closure)
+- [https://medium.com/@kkak10/lexical-environment-4e0cffcad98d](https://medium.com/@kkak10/lexical-environment-4e0cffcad98d)
+- [https://sdcodebase.tistory.com/24](https://sdcodebase.tistory.com/24)
+- [http://dmitrysoshnikov.com/ecmascript/es5-chapter-3-2-lexical-environments-ecmascript-implementation/#object-environment-record](http://dmitrysoshnikov.com/ecmascript/es5-chapter-3-2-lexical-environments-ecmascript-implementation/#object-environment-record)
+- [https://www.ecma-international.org/ecma-262/5.1/#sec-10.2.1](https://www.ecma-international.org/ecma-262/5.1/#sec-10.2.1)
+- [https://meetup.toast.com/posts/86](https://meetup.toast.com/posts/86)
+- [https://wit.nts-corp.com/2014/06/20/1560](https://wit.nts-corp.com/2014/06/20/1560)
