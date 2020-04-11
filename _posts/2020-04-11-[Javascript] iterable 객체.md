@@ -272,3 +272,11 @@ for (let num of testObject) {
 이제서야 저 에러 한 줄을 이해할 준비가 된 것 같네요🤺
 
 긴 글 읽어주셔서 감사합니다! 누군가에게는 도움이 됐길 바랍니다👏🏻
+
+## 참고
+
+- [https://ko.javascript.info/iterable](https://ko.javascript.info/iterable)
+- [https://poiemaweb.com/es6-iteration-for-of](https://poiemaweb.com/es6-iteration-for-of)
+- [https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e](https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e)
+- [https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Iterators_and_Generators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Iterators_and_Generators)
+- 양성익, [속깊은 Javascript], 루비페이퍼(2013)
