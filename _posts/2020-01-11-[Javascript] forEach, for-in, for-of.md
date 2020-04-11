@@ -5,6 +5,7 @@ categories:
   - Javascript
 tags:
   - Javascript
+  - 반복문
 classes: wide
 ---
 
