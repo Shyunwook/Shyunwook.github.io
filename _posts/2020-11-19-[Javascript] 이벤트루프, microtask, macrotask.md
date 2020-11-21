@@ -399,3 +399,4 @@ MicroTask Queue에 있는 async 함수는 promise 객체가 resolve 된 것을 �
 
 [https://medium.com/@lydiahallie](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)  
 [https://soobakba.tistory.com/48](https://soobakba.tistory.com/48)
+[https://ko.javascript.info/promise-basics](https://ko.javascript.info/promise-basics)
