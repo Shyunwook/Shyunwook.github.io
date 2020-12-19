@@ -74,7 +74,7 @@ Call Stack에는,
 
 **Web API**는 브라우저에서 제공하는 API 입니다.  
 비동기 호출을 위해 사용하는 함수들이 정의 되어있죠(ex. XHttpRequest, setTimeout, DOM 등등)  
-호출 스택에서 Web API 함수가 호출 되면 해당 함수의 콜백 함수는 특정 조건이 만족되기를 기다렸다가 **CallBack Queue**로 들어가게 됩니다.
+호출 스택에서 Web API 함수가 실행되면, 자바스크립트 엔진은 Web API에 해당 함수를 요청하며 콜백을 넘겨줍니다. 그리고 호출 스택에서 실행한 Web API 함수를 제거합니다. 넘겨진 콜백 함수는 특정 조건이 만족되기를 기다렸다가 **CallBack Queue**로 들어가게 됩니다.
 
 여기서 특정 조건이라 함은 클릭 이벤트가 발생 했을 경우, setTimeout에 지정한 시간이 지났을 경우 등을 의미합니다.
 
@@ -125,7 +125,7 @@ two();
 
 지금 까지 알아본 내용을 바탕으로, 코드를 위에서 부터 차근차근 다시 읽어보겠습니다.
 
-1. 호출 스택에서 setTimeout **실행**  
+1. 호출 스택에서 setTimeout **실행** -> setTimeout 함수 종료
    1-1. Web API 영역에서 타이머가 실행되고 지정한 대기시간 동안 기다립니다  
    1-2. 0초의 대기시간이 지난 후 콜백 함수가 콜백 큐로 **이동**
 2. 호출 스택에서 one 함수 **실행**
@@ -250,6 +250,7 @@ one -> two -> promise1 -> promise2 -> setTimeout
 [https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)  
 [https://velog.io/@thms200](https://velog.io/@thms200/Event-Loop-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84)  
 [https://engineering.huiseoul.com](https://engineering.huiseoul.com/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%98%EB%8A%94%EA%B0%80-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EC%99%80-%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%98-%EB%B6%80%EC%83%81-async-await%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%BD%94%EB%94%A9-%ED%8C%81-%EB%8B%A4%EC%84%AF-%EA%B0%80%EC%A7%80-df65ffb4e7e)
+[https://hudi.kr](https://hudi.kr/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-javascript-%EC%8B%B1%EA%B8%80%EC%8A%A4%EB%A0%88%EB%93%9C-%EA%B8%B0%EB%B0%98-js%EC%9D%98-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC-%EB%B0%A9%EB%B2%95/)
 
 ## 부록
 
